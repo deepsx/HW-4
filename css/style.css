@@ -9,7 +9,6 @@
 }
 body{
   width: 100%;
-  height: auto;
   background: url('../img/background.png') 0 -40px; 
 }
 ul{
@@ -17,7 +16,6 @@ ul{
 }
 .wrapper{
 	width: 1000px;
-  height: 100%;
 	margin: 0 auto;
 	background-color: #fff;
   border-bottom: 3px solid #031d28;
@@ -80,62 +78,62 @@ margin: 92px -135px 0px 0px;
   border-bottom: 1px solid #128aa7;
 }
 /* NAVBAR */
-ul.menu {
+.menu{
   margin-top: -2px;
-  display: block;
   background-color: rgb(48, 48, 48);
   border-bottom: 1px solid #000;
   box-shadow: 0 4px 2px -2px #323232;
+  position: relative;
 }
 .menu a{
   font-size: 14px;
   color: #fff;
 }
 ul:after {
-    display: block;
-    content: ' ';
-    clear: both;
-    float: none;
+  display: block;
+  content: ' ';
+  clear: both;
+  float: none;
 }
 ul.menu > li {
-    float: left;
-    position: relative;
-    padding-left: 50px;
+  display: inline-block;
+  float: left;
+  padding-left: 50px;
 }
 ul.menu > li > a {
-    display: block;
-    padding: 8px;
+  display: block;
+  padding: 8px;
 }
 ul.submenu {
-    display: none;
-    position: absolute;
-    width: 150px;
-    top: 34px;
-    background-color: rgb(48, 48, 48);
-    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
-    z-index: 999;
-    
+  display: none;
+  position: absolute;
+  width: 150px;
+  top: 34px;
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  z-index: 999;
 }
 ul.submenu > li {
-    display: block;
-    padding: 6px 0 6px 6px;
+   clear: both;
+  display: block;
+  padding: 6px 0 6px 6px;
 }
 ul.menu > li:hover > ul.submenu {
-    display: block;
+  display: block;
 }  
-.triangle::after{
+.triangle:after{
   content: '';
   width: 1px;
 	height: 0;
 	border-left: 3px solid transparent;
 	border-right: 3px solid transparent;
 	border-top: 6px solid #fff;
-	margin: 6px 0 0 7px;
+	margin: 6px 0 0 6px;
   float: right;
 }
 /* CONTENT */
 
-main{
+.main{
 	width: 100%;
 	overflow: hidden;
 }
